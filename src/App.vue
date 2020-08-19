@@ -1,28 +1,24 @@
 <template>
-  <div id="app">
-    <img width="25%" src="./assets/logo.png">
-    <HelloWorld msg="Hello Vue in CodeSandbox!"/>
+  <div>
+    <b-image :src="imageUrl" style="width:180px" class="container pt-4"/>
+    <decimal-converter/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/DecimalConverter";
+import DecimalConverter from "./components/DecimalConverter";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    DecimalConverter
+  },
+
+  data() {
+    return {
+      imageUrl:
+        "https://cdn.pixabay.com/photo/2016/03/13/21/22/binary-1254481_960_720.png"
+    };
   }
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

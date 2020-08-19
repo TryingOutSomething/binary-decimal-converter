@@ -33,4 +33,4 @@ constraints:
 
 - [x] User can enter a variable number of binary digits
 
-### Built with VueJS and Buefy
+## Built with VueJS and Buefy
